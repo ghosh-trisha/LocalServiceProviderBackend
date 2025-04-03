@@ -10,25 +10,38 @@ router.use(
   authMiddleware.providerRoleAuthenticate
 );
 
-router.post('/services', providerController.createService); // create
-router.put('/services/:id', providerController.updateService); // update
-router.delete('/services/:id', providerController.deleteService); // delete
+
+// create new service
+router.post('/services/create', providerController.createService); 
+
+// update service
+router.put('/services/:id', providerController.updateService); 
+
+// delete service
+router.delete('/services/:id', providerController.deleteService); 
+
+// accept service request
 router.patch(
   '/requests/:id/accept',
-  authMiddleware.authenticate,
-  authMiddleware.providerRoleAuthenticate,
   providerController.acceptRequest
-); // accept
+); 
+
+// reject service request
 router.patch(
   '/requests/:id/reject',
-  authMiddleware.authenticate,
-  authMiddleware.providerRoleAuthenticate,
   providerController.rejectRequest
-); // reject
+); 
+
+// bill generate
 router.post(
   '/requests/:id/bill',
-  authMiddleware.providerRoleAuthenticate,
   providerController.generateBill
-); // bill generate
+); 
+
+// add provider bank details
+router.post(
+  '/bankDetails',
+  providerController.addProviderBankDetails
+); 
 
 module.exports = router;

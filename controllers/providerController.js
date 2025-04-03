@@ -2,7 +2,20 @@ const Service = require('../models/Service');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const ServiceRequest = require('../models/ServiceRequest');
-const Bill = require('../models/Bill');
+const Bill = require('../models/bill');
+const ProviderBankDetail = require('../models/ProviderBankDetails');
+const Razorpay = require('razorpay');
+const Payment = require('../models/Payment');
+
+
+// Allowed categories for services
+const allowedCategories = ['BeautyAndSaloon', 'HouseKeeping', 'Tutor', 'Electrician', 'Carpenter', 'Plumber'];
+
+const razorpay = new Razorpay({
+  key_id: process.env.RAZORPAY_KEY_ID,
+  key_secret: process.env.RAZORPAY_SECRET
+});
+
 
 exports.createService = catchAsync(async (req, res, next) => {
   const {
@@ -18,6 +31,11 @@ exports.createService = catchAsync(async (req, res, next) => {
   // Validate required fields
   if (!name || !price || !location_latitude || !location_longitude || !address) {
     return next(new AppError('Please provide all required fields', 400));
+  }
+
+  // Validate service name for parent service only
+  if (!parent_service && !allowedCategories.includes(name)) {
+    return next(new AppError(`Invalid service name. Allowed parent services are: ${allowedCategories.join(', ')}`, 400));
   }
 
   // Validate coordinates
@@ -83,6 +101,11 @@ exports.updateService = catchAsync(async (req, res, next) => {
   // 2. Verify ownership
   if (service.provider.toString() !== req.user.id) {
     return next(new AppError('Not authorized to update this service', 403));
+  }
+
+  // Validate service name for parent service only
+  if (!parent_service && !allowedCategories.includes(name)) {
+    return next(new AppError(`Invalid service name. Allowed parent services are: ${allowedCategories.join(', ')}`, 400));
   }
 
   // 3. Prepare update data
@@ -222,7 +245,65 @@ exports.rejectRequest = catchAsync(async (req, res, next) => {
   });
 });
 
+exports.addProviderBankDetails = catchAsync(async (req, res, next) => {
+  const { account_holder, account_number, ifsc } = req.body;
+
+  // Validate required fields
+  if (!account_holder || !account_number || !ifsc) {
+    return next(new AppError('Please provide all required bank details', 400));
+  }
+
+  // Check if bank details already exist for this provider
+  const existingDetails = await ProviderBankDetail.findOne({ provider: req.user.id });
+  if (existingDetails) {
+    return next(new AppError('Bank details already exist for this provider', 400));
+  }
+
+  console.log('Razorpay Contact:', razorpay);
+  try {
+    // Create Razorpay contact
+    const contact = await razorpay.contact.create({
+      name: account_holder,
+      type: 'vendor',
+      email: req.user.email,
+      contact: req.user.phone
+    });
+
+
+    // Create Razorpay fund account
+    const fundAccount =  razorpay.fundAccount.create({
+      contact_id: contact.id,
+      account_type: 'bank_account',
+      bank_account: {
+        name: account_holder,
+        ifsc: ifsc.toUpperCase(),
+        account_number
+      }
+    });
+
+    // Create new bank details record with Razorpay IDs
+    const bankDetails = await ProviderBankDetail.create({
+      provider: req.user.id,
+      account_holder,
+      account_number,
+      ifsc: ifsc.toUpperCase(),
+      razorpay_contact_id: contact.id,
+      razorpay_fund_id: fundAccount.id
+    });
+
+    res.status(201).json({
+      status: 'success',
+      message: 'Bank details and Razorpay account setup successfully',
+      data: { bankDetails }
+    });
+  } catch (error) {
+    console.error('Razorpay Error:', error);
+    return next(new AppError('Error while creating bank details with Razorpay', 500));
+  }
+});
+
 exports.generateBill = catchAsync(async (req, res, next) => {
+
   const { id } = req.params;
   const { amount } = req.body;
 
@@ -261,13 +342,26 @@ exports.generateBill = catchAsync(async (req, res, next) => {
   // 6. Create new bill
   const newBill = await Bill.create({
     request: id,
+    provider: serviceRequest.service.provider,
     amount,
     status: 'unpaid'
   });
 
+  // 7. Create an entry in Payment table
+  const newPayment = await Payment.create({
+    bill: newBill._id,
+    provider: serviceRequest.service.provider,
+    customer: serviceRequest.customer,
+    amount: amount * 100, // Store in paise
+    status: 'created',
+    payment_method: 'pending' // Payment method not confirmed yet
+  });
+
   res.status(201).json({
     status: 'success',
-    message: 'Bill generated successfully',
-    bill_id: newBill._id
+    message: 'Bill and payment record created successfully',
+    bill_id: newBill._id,
+    payment_id: newPayment._id
   });
 });
+

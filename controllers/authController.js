@@ -3,7 +3,7 @@ const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const jwt = require('jsonwebtoken');
 const jwtConfig = require('../config/jwt');
-const Session =require('../models/Session')
+const Session = require('../models/Session')
 
 exports.register = catchAsync(async (req, res, next) => {
   const {
@@ -18,8 +18,8 @@ exports.register = catchAsync(async (req, res, next) => {
   } = req.body;
 
   // Validate required fields
-  if (!name || !email || !password || !phone_number || !role || 
-      !location_latitude || !location_longitude || !address) {
+  if (!name || !email || !password || !phone_number || !role ||
+    !location_latitude || !location_longitude || !address) {
     return next(new AppError('Please provide all required fields', 400));
   }
 
@@ -64,7 +64,6 @@ exports.register = catchAsync(async (req, res, next) => {
 });
 
 
-
 exports.login = catchAsync(async (req, res, next) => {
   const { email, password } = req.body;
 
@@ -82,7 +81,7 @@ exports.login = catchAsync(async (req, res, next) => {
 
   // 3. Generate JWT token using your config
   const token = jwt.sign(
-    { id: user._id, role: user.role , email:user.email},
+    { id: user._id, role: user.role, email: user.email },
     jwtConfig.secret,
     {
       expiresIn: jwtConfig.expiresIn,
@@ -93,7 +92,7 @@ exports.login = catchAsync(async (req, res, next) => {
   );
 
   // 4. Create a new session
-   await Session.create({
+  await Session.create({
     user: user._id,
     ip: req.ip, // Get IP address from request
     userAgent: req.get('User-Agent') // Get user agent from request headers
@@ -106,7 +105,7 @@ exports.login = catchAsync(async (req, res, next) => {
   res.status(200).json({
     status: 'success',
     message: 'Login successful',
-    token,
+    accessToken: token,
     user: {
       id: user._id,
       name: user.name,
@@ -118,45 +117,46 @@ exports.login = catchAsync(async (req, res, next) => {
 
 
 exports.logout = catchAsync(async (req, res, next) => {
-    // 1. Find the active session for the user
-    const session = await Session.findOneAndUpdate(
-      { user: req.user.id, active: true }, // Find active session
-      { logoutTime: Date.now(), active: false }, // Update logout time and set inactive
-      { new: true } // Return the updated session
-    );
-  
-    if (!session) {
-      return next(new AppError('No active session found', 404));
-    }
-  
-    // 2. Send response
-    res.status(200).json({
-      status: 'success',
-      message: 'Logout successful'
-    });
-  });
+  // 1. Find the active session for the user
+  const session = await Session.findOneAndUpdate(
+    { user: req.user.id, active: true }, // Find active session
+    { logoutTime: Date.now(), active: false }, // Update logout time and set inactive
+    { new: true } // Return the updated session
+  );
 
-  exports.resetPassword = catchAsync(async (req, res, next) => {
-    // 1. Get user from request
-    const { new_password } = req.body;
-  
-    if (!new_password) {
-      return next(new AppError('Please provide a new password', 400));
-    }
-  
-    // 2. Find user and update password
-    const user = await User.findById(req.user.id).select('+password');
-    if (!user) {
-      return next(new AppError('User not found', 404));
-    }
-  
-    // 3. Update password (pre-save hook will handle hashing )
-    user.password = new_password;
-    await user.save();
-  
-    // 4. Send response
-    res.status(200).json({
-      status: 'success',
-      message: 'Password reset successful'
-    });
+  if (!session) {
+    return next(new AppError('No active session found', 404));
+  }
+
+  // 2. Send response
+  res.status(200).json({
+    status: 'success',
+    message: 'Logout successful'
   });
+});
+
+
+exports.resetPassword = catchAsync(async (req, res, next) => {
+  // 1. Get user from request
+  const { new_password } = req.body;
+
+  if (!new_password) {
+    return next(new AppError('Please provide a new password', 400));
+  }
+
+  // 2. Find user and update password
+  const user = await User.findById(req.user.id).select('+password');
+  if (!user) {
+    return next(new AppError('User not found', 404));
+  }
+
+  // 3. Update password (pre-save hook will handle hashing )
+  user.password = new_password;
+  await user.save();
+
+  // 4. Send response
+  res.status(200).json({
+    status: 'success',
+    message: 'Password reset successful'
+  });
+});

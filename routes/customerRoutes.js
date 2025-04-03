@@ -1,50 +1,31 @@
 const express = require('express');
 const customerController = require('../controllers/customerController');
+const paymentController = require('../controllers/paymentController');
 const authMiddleware = require('../middlewares/auth');
 
 const router = express.Router();
 
 // Protect all routes after this middleware
 router.use(
-  authMiddleware.authenticate,
-  authMiddleware.customerRoleAuthenticate
-);
-
-// services under main category
-router.get('/services/:service_name', customerController.getServicesByType);
-//services after filtering
-router.post(
-    '/services/filter',
     authMiddleware.authenticate,
-    authMiddleware.customerRoleAuthenticate,
-    customerController.filterServices
-);
-// detailed info of a service
-router.get(
-    '/services/info/:id',
-    authMiddleware.authenticate,
-    authMiddleware.customerRoleAuthenticate,
-    customerController.getServiceDetails
-);
-// review
-router.post(
-    '/services/:id/review',
-    authMiddleware.authenticate,
-    authMiddleware.customerRoleAuthenticate,
-    customerController.submitReview
-);
-// pay
-router.post(
-    '/requests/:id/pay',
-    authMiddleware.authenticate,
-    authMiddleware.customerRoleAuthenticate,
-    customerController.processPayment
+    authMiddleware.customerRoleAuthenticate
 );
 
 
+// get all parent services
+router.get('/services/all/parents', customerController.getAllParentServices); 
 
+// get all services by category and radius
+router.get('/services/:service_name', customerController.getFilteredServices);
 
-// sending service request
-router.post('/requests', customerController.createServiceRequest);
+// get one service details by id
+router.get('/services/info/:id', customerController.getServiceDetails);
+
+// create service request
+router.post('/services/request', customerController.createServiceRequest);
+
+// submit review for a service
+router.post('/services/:id/review', customerController.submitReview);
+
 
 module.exports = router;

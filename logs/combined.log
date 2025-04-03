@@ -129,3 +129,176 @@
 {"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-02-16T11:04:15.114Z"}
 {"level":"info","message":"MongoDB connection established","timestamp":"2025-02-16T11:04:25.864Z"}
 {"level":"info","message":"MongoDB connection established","timestamp":"2025-02-16T11:09:15.546Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T16:44:02.257Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T16:44:14.010Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T16:45:14.405Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-28T16:49:01.189Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T16:49:11.469Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T16:53:12.550Z"}
+{"isOperational":true,"level":"error","message":"Incorrect email or password","stack":"Error: Incorrect email or password\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\authController.js:79:17","status":"error","statusCode":401,"timestamp":"2025-03-28T16:54:08.349Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-28T18:06:29.818Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:06:29.853Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:09:25.770Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:15:12.810Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:15:58.066Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:20:53.785Z"}
+{"isOperational":true,"level":"error","message":"Not a valid user role to hit this API","stack":"Error: Not a valid user role to hit this API\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\middlewares\\auth.js:53:14\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\utils\\catchAsync.js:4:13\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\middlewares\\auth.js:38:3\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":400,"timestamp":"2025-03-28T18:21:43.547Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:23:02.736Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-28T18:29:01.131Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:29:01.144Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-28T18:33:48.049Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:33:48.060Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:34:40.778Z"}
+{"isOperational":true,"level":"error","message":"Service not found","stack":"Error: Service not found\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:85:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":404,"timestamp":"2025-03-28T18:35:10.402Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:35:54.816Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:37:28.004Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-28T18:40:31.405Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:01:06.139Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:01:18.578Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:01:24.794Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:03:37.297Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:05:39.358Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:05:45.181Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:05:56.271Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:06:11.536Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:06:18.785Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:06:25.849Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:06:45.939Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:07:39.718Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:08:31.447Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:08:44.807Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:08:51.661Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:08:57.407Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:09:16.444Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:23:25.153Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:23:41.839Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:28:56.857Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:29:30.919Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:31:27.042Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:37:46.872Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:40:13.666Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:40:16.590Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:40:40.499Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T04:43:30.874Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T06:54:29.371Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T06:54:29.659Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T13:27:53.167Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T13:27:53.224Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T13:35:05.279Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T13:35:05.376Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T13:36:12.479Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T13:36:22.783Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T13:40:11.116Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T14:56:09.350Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T14:59:43.649Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T14:59:48.568Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:01:20.122Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:03:28.038Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:04:06.534Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:05:04.664Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:07:08.140Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:07:19.298Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:08:01.996Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:09:07.124Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:11:23.931Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:13:58.809Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:20:38.011Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:36:55.730Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:38:11.910Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:40:08.042Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:49:41.180Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:54:43.661Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:59:26.593Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:59:39.093Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T15:59:53.226Z"}
+{"isOperational":true,"level":"error","message":"Invalid radius parameter","stack":"Error: Invalid radius parameter\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\customerController.js:33:49\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\utils\\catchAsync.js:4:13\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:421:3)","status":"error","statusCode":400,"timestamp":"2025-03-29T16:01:24.767Z"}
+{"isOperational":true,"level":"error","message":"Invalid radius parameter","stack":"Error: Invalid radius parameter\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\customerController.js:33:49\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\utils\\catchAsync.js:4:13\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:421:3)","status":"error","statusCode":400,"timestamp":"2025-03-29T16:04:04.199Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T16:07:10.877Z"}
+{"isOperational":true,"level":"error","message":"Invalid radius parameter","stack":"Error: Invalid radius parameter\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\customerController.js:33:49\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\utils\\catchAsync.js:4:13\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:421:3)","status":"error","statusCode":400,"timestamp":"2025-03-29T16:07:25.390Z"}
+{"isOperational":true,"level":"error","message":"Invalid radius parameter","stack":"Error: Invalid radius parameter\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\customerController.js:33:49\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\utils\\catchAsync.js:4:13\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:421:3)","status":"error","statusCode":400,"timestamp":"2025-03-29T16:07:29.501Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T16:25:51.235Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T16:25:51.365Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T16:41:07.281Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T16:41:23.541Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-29T16:50:42.987Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:08:06.964Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:12:49.911Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:14:45.523Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:16:20.288Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:16:58.130Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:17:12.669Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:18:33.875Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:18:56.807Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:20:20.203Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:21:00.918Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:23:31.860Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:24:09.348Z"}
+{"isOperational":true,"level":"error","message":"Service request not found","stack":"Error: Service request not found\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:319:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":404,"timestamp":"2025-03-29T18:25:02.796Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:31:39.704Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:36:18.118Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:40:05.552Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:43:37.620Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:43:49.502Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:356:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-29T18:44:08.966Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-29T18:52:37.098Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T04:23:55.847Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T04:26:20.633Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T04:27:21.702Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T04:51:47.049Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T04:52:05.860Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T04:52:13.637Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T04:52:43.798Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:04:05.109Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:10:06.075Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:10:18.495Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:11:10.054Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:11:17.307Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:36:33.154Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:38:17.205Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:298:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T12:39:05.226Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:39:54.848Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:299:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T12:40:07.786Z"}
+{"isOperational":true,"level":"error","message":"Bill already exists for this request","stack":"Error: Bill already exists for this request\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:337:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":400,"timestamp":"2025-03-30T12:40:12.192Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:299:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T12:40:33.913Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:42:15.592Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:299:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T12:42:29.008Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:44:47.913Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:301:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T12:44:56.828Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:48:18.431Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:48:40.947Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:301:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T12:48:45.404Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T12:54:08.174Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:301:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T12:54:46.581Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T13:06:08.174Z"}
+{"isOperational":true,"level":"error","message":"Error while creating bank details with Razorpay","stack":"Error: Error while creating bank details with Razorpay\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\controllers\\providerController.js:301:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","status":"error","statusCode":500,"timestamp":"2025-03-30T13:06:33.298Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-30T13:54:44.067Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T13:54:54.322Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-30T14:17:49.895Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-30T14:18:45.510Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-30T16:38:31.313Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T02:16:37.016Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-31T03:10:29.348Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T03:24:41.854Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-31T03:43:33.479Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T03:43:33.509Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-31T04:09:16.526Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T04:09:26.707Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-31T05:00:11.036Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:00:11.067Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-31T05:27:33.788Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:27:44.236Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:52:27.293Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:52:39.587Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:53:22.798Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:54:17.703Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:55:03.045Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:55:34.384Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:55:41.701Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:57:55.414Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T05:58:44.641Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T06:00:07.252Z"}
+{"isOperational":true,"level":"error","message":"You are not logged in! Please log in to get access.","stack":"Error: You are not logged in! Please log in to get access.\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\middlewares\\auth.js:18:17\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\utils\\catchAsync.js:4:13\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)","status":"error","statusCode":401,"timestamp":"2025-03-31T06:00:34.232Z"}
+{"isOperational":true,"level":"error","message":"You are not logged in! Please log in to get access.","stack":"Error: You are not logged in! Please log in to get access.\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\middlewares\\auth.js:18:17\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\utils\\catchAsync.js:4:13\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (C:\\Users\\hp\\OneDrive\\Desktop\\College\\final year project\\LocalServiceProviderBackend\\node_modules\\express\\lib\\router\\layer.js:95:5)","status":"error","statusCode":401,"timestamp":"2025-03-31T06:00:34.818Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-31T06:10:04.377Z"}
+{"level":"info","message":"MongoDB connection established","timestamp":"2025-03-31T06:10:14.918Z"}
+{"level":"warn","message":"MongoDB connection disconnected","timestamp":"2025-03-31T09:42:45.740Z"}
